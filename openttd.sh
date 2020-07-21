@@ -1,6 +1,6 @@
 #!/bin/sh
 
-savepath="/home/openttd/.openttd/save"
+savepath=${:-"/home/openttd/.openttd/save"}
 savegame="${savepath}/${savename}"
 LOADGAME_CHECK="${loadgame}x"
 loadgame=${loadgame:-'false'}
